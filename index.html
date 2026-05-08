@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Global Digital Clock</h1>
+        <p class="subtitle">Current time across different time zones</p>
+        
+        <div class="clocks-grid">
+            <!-- UTC -->
+            <div class="clock-card">
+                <div class="timezone-name">UTC</div>
+                <div class="timezone-label">Universal Time</div>
+                <div class="digital-clock" id="utc">00:00:00</div>
+            </div>
+
+            <!-- EST (New York) -->
+            <div class="clock-card">
+                <div class="timezone-name">EST</div>
+                <div class="timezone-label">New York, USA</div>
+                <div class="digital-clock" id="est">00:00:00</div>
+            </div>
+
+            <!-- CST (Chicago) -->
+            <div class="clock-card">
+                <div class="timezone-name">CST</div>
+                <div class="timezone-label">Chicago, USA</div>
+                <div class="digital-clock" id="cst">00:00:00</div>
+            </div>
+
+            <!-- PST (Los Angeles) -->
+            <div class="clock-card">
+                <div class="timezone-name">PST</div>
+                <div class="timezone-label">Los Angeles, USA</div>
+                <div class="digital-clock" id="pst">00:00:00</div>
+            </div>
+
+            <!-- IST (New Delhi) -->
+            <div class="clock-card">
+                <div class="timezone-name">IST</div>
+                <div class="timezone-label">New Delhi, India</div>
+                <div class="digital-clock" id="ist">00:00:00</div>
+            </div>
+
+            <!-- JST (Tokyo) -->
+            <div class="clock-card">
+                <div class="timezone-name">JST</div>
+                <div class="timezone-label">Tokyo, Japan</div>
+                <div class="digital-clock" id="jst">00:00:00</div>
+            </div>
+
+            <!-- GMT (London) -->
+            <div class="clock-card">
+                <div class="timezone-name">GMT</div>
+                <div class="timezone-label">London, UK</div>
+                <div class="digital-clock" id="gmt">00:00:00</div>
+            </div>
+
+            <!-- AEST (Sydney) -->
+            <div class="clock-card">
+                <div class="timezone-name">AEST</div>
+                <div class="timezone-label">Sydney, Australia</div>
+                <div class="digital-clock" id="aest">00:00:00</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Updates every second | Last updated: <span id="last-updated">Now</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
